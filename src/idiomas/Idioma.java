@@ -3,7 +3,7 @@ package idiomas;
 import cliente.ClienteProxy;
 
 /**
- * Interface que servira para cambiar el idioma de la tiende,
+ * Interface que servira para cambiar el idioma de la tienda,
  * dependiendo de la nacionalidad del cliente
  * 
  * @author Hermes

@@ -104,7 +104,7 @@ public class EspanolMexico implements Idioma{
 
     @Override
     public void despedirse() {
-        Colors.println("Nos vemos, cuidate amigo!", Colors.GREEN);
+        Colors.println("Nos vemos, cuidate amig@!", Colors.GREEN);
     }
 
     @Override
@@ -114,13 +114,27 @@ public class EspanolMexico implements Idioma{
 
     @Override
     public void alerta(int opcion) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'alerta'");
+        switch (opcion) {
+            case 1:
+                Colors.println("Solo puedes comprar un producto a la vez", Colors.RED);
+                break;
+            case 2:
+                Colors.println("No has agregado nada al carrito ", Colors.RED);
+                break;
+            case 3:
+                Colors.println("Borraremos tu carrito", Colors.RED);
+                break;
+            case 4:
+                Colors.println("No tienes suficiente saldo", Colors.RED);
+                break;
+            default:
+                break;
+        }
     }
 
     @Override
     public String verSaldo(ClienteProxy usuario) {
-        return "Amigo" + usuario.getNombre() + ", tu saldo es de:" + usuario.getSaldo(); 
+        return "Amig@" + usuario.getNombre() + ", tu saldo es de: $" + usuario.getSaldo(); 
     }
     
 }
