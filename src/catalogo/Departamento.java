@@ -20,7 +20,7 @@ public class Departamento extends ComponenteCatalogo{
     /**
      * Lista de productos en el departamento
      */
-    private ArrayList<Producto> listaProductos;
+    private ArrayList<Producto> listaProductos = new ArrayList<>();
 
 
     /**

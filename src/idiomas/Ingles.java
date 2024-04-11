@@ -100,7 +100,7 @@ public class Ingles implements Idioma{
 
         LocalDate randomDate = LocalDate.ofEpochDay(randomDay);
 
-        Colors.println("Your product will be delivered on the day " + randomDate , Colors.GREEN);
+        Colors.println("Your product will be delivered on the day(Year,Month,Day): " + randomDate , Colors.GREEN);
     }
 
     @Override
@@ -135,7 +135,7 @@ public class Ingles implements Idioma{
 
     @Override
     public String verSaldo(ClienteProxy usuario) {
-        return "Friend" + usuario.getNombre() + ", your balance is: $" + usuario.getSaldo(); 
+        return "Friend " + usuario.getNombre() + ", your balance is: $" + usuario.getSaldo(); 
     }
     
 }

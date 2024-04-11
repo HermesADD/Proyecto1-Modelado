@@ -99,7 +99,7 @@ public class EspanolMexico implements Idioma{
 
         LocalDate randomDate = LocalDate.ofEpochDay(randomDay);
 
-        Colors.println("Tu producto sera entregado el dia" + randomDate , Colors.GREEN);
+        Colors.println("Tu producto sera entregado el dia(Anio,Mes,Dia): " + randomDate , Colors.GREEN);
     }
 
     @Override
@@ -134,7 +134,7 @@ public class EspanolMexico implements Idioma{
 
     @Override
     public String verSaldo(ClienteProxy usuario) {
-        return "Amig@" + usuario.getNombre() + ", tu saldo es de: $" + usuario.getSaldo(); 
+        return "Amig@ " + usuario.getNombre() + ", tu saldo es de: $" + usuario.getSaldo(); 
     }
     
 }
