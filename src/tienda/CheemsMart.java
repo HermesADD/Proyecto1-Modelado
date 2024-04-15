@@ -56,7 +56,7 @@ public class CheemsMart  implements Sujeto{
     
     public CheemsMart() {
         clientes.add(new Cliente("Hermes319B", "hermes", "Hermes Alberto", "55-2885-2875", "Calle 29 CDMX 26","MX39494JF","Mexico",29793.0));
-        clientes.add(new Cliente("Steve318J", "steve", "Kevin Steve", "55-3692-1857", "Calle 17 EDOMEX 21","ES28946DM","Espana",32500.0));
+        clientes.add(new Cliente("Steve318J", "steve", "Kevin Steve", "38-3692-1857", "Calle 17 Bilbao 21","ES28946DM","Espana",32500.0));
         clientes.add(new Cliente("Emiliano320T", "emiliano", "Emiliano Sebastian", "67-1974-8357", "Street 29 California 20","EU85201KW","EUA",18900.0));
         generarOferta();
         ofertaNacional();
