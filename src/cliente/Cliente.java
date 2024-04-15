@@ -50,10 +50,6 @@ public class Cliente implements ClienteInterfaz, Observador{
      */
     private double saldo;
 
-    /**
-     * ID del cliente 
-     */
-    private long id;
 
     /**
     * Cadena con la promocion que puede aprovechar el cliente
@@ -72,10 +68,9 @@ public class Cliente implements ClienteInterfaz, Observador{
      * @param cuentaBanco Cuenta Bancaria del cliente
      * @param nacionalidad Nacionalidad del cliente
      * @param saldo Saldo en la cuenta de banco del cliente
-     * @param id ID del cliente
      */
     public Cliente(String nombreUsuario, String contrasena, String nombre, String telefono, 
-        String direccion, String cuentaBanco, String nacionalidad, double saldo, long id) {
+        String direccion, String cuentaBanco, String nacionalidad, double saldo) {
 
         this.nombreUsuario = nombreUsuario;
         this.contrasena = contrasena;
@@ -85,7 +80,6 @@ public class Cliente implements ClienteInterfaz, Observador{
         this.cuentaBanco = cuentaBanco;
         this.nacionalidad = nacionalidad;
         this.saldo = saldo;
-        this.id = id;
 
     }
 
@@ -137,14 +131,6 @@ public class Cliente implements ClienteInterfaz, Observador{
      */
     public String getNacionalidad(){
         return nacionalidad;
-    }
-
-    /**
-     * Metodo que regresa el ID del cliente
-     * @return id del cliente
-     */
-    public long getID(){
-        return id;
     }
 
     /**

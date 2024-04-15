@@ -94,15 +94,6 @@ public class ClienteProxy implements ClienteInterfaz{
     }
 
     /**
-    * Devuelve el ID del cliente
-    *
-    * @return Long con el ID del cliente
-    */
-    public long getID(){
-        return cliente.getID();
-    }
-
-    /**
      * Método para obtener el saldo del cliente
      *
      * @return saldo - Saldo del cliente

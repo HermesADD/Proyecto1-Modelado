@@ -7,8 +7,6 @@ import idiomas.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Random;
-import java.net.*;
-import java.io.*;
 
 /**
  * Clase donde se hara todo el proceso de compra en la tienda, que utiliza el patron Observer
@@ -57,9 +55,9 @@ public class CheemsMart  implements Sujeto{
     private int descuento = 0;
     
     public CheemsMart() {
-        clientes.add(new Cliente("Hermes319B", "hermes", "Hermes Alberto", "55-2885-2875", "Calle 29 CDMX 26","MX39494JF","Mexico",29793.0,1));
-        clientes.add(new Cliente("Steve318J", "steve", "Kevin Steve", "55-3692-1857", "Calle 17 EDOMEX 21","ES28946DM","Espana",32500.0,2));
-        clientes.add(new Cliente("Emiliano320T", "emiliano", "Emiliano Sebastian", "67-1974-8357", "Street 29 California 20","EU85201KW","EUA",18900.0,3));
+        clientes.add(new Cliente("Hermes319B", "hermes", "Hermes Alberto", "55-2885-2875", "Calle 29 CDMX 26","MX39494JF","Mexico",29793.0));
+        clientes.add(new Cliente("Steve318J", "steve", "Kevin Steve", "55-3692-1857", "Calle 17 EDOMEX 21","ES28946DM","Espana",32500.0));
+        clientes.add(new Cliente("Emiliano320T", "emiliano", "Emiliano Sebastian", "67-1974-8357", "Street 29 California 20","EU85201KW","EUA",18900.0));
         generarOferta();
         ofertaNacional();
         notificar();
